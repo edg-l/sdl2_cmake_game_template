@@ -3,7 +3,11 @@
 #
 cmake_minimum_required (VERSION 3.8)
 
-project ("RatsWorld")
+set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+ 
+project ("MyGame")
 
 # Incluya los subproyectos.
-add_subdirectory ("RatsWorld")
+add_subdirectory ("Engine")
+add_subdirectory ("Client")
+add_subdirectory ("Server")
